@@ -1,0 +1,12 @@
+body {
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 30vw;
+}
