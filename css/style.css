@@ -11,17 +11,58 @@ body {
     flex-direction: column;
     padding-left: 0;
 }
+
+.nav {
+    margin: 20px;
+}
+
+.nav .btn {
+    font-weight: bold;
+    padding-right: 0;
+}
 h1 {
     font-size: 3rem;
-    margin-left: 10px;
+
 }
 .btnLogin {
     margin-left: 5px !important;
 }
 
+fieldset.border.p-2 {
+    margin: 20px;
+}
 
+legend.w-auto {
+    font-size: 1.3rem;
+    text-align: center;
+}
 
+.names {
+    flex-direction: row;
+}
+
+.btn.mfbtn {
+    width: 75px;
+    margin-bottom: 30px;
+}
+
+.btn.btn-signup, .btn.btn-fb {
+    margin-bottom: 10px;
+}
+.btn-signup {
+    border-radius: 12.5px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.btn-fb {
+    border-radius: 12.5px;
+}
+
+.footer {
+    margin:0 0 20px 20px;
+}
 
 img {
-    width: 99vw;
+    width: 100vw;
 }

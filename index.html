@@ -21,18 +21,18 @@
             <form>
                 <fieldset class="border p-2">
                     <legend class="w-auto">Create An Account</legend>
-                    <div class="form-group">
+                    <div class="form-group names">
                         <div class="form-row">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" placeholder="First name" required>
+                                <input type="text" class="form-control form-control-lg" placeholder="First name" required>
                             </div>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" placeholder="Last name" required>
+                                <input type="text" class="form-control form-control-lg" placeholder="Last name" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" placeholder="Username" required>
+                                <input type="text" class="form-control form-control-lg" placeholder="Username" required>
                             </div>
                         </div>
                     </div>
@@ -40,17 +40,17 @@
                     <div>
                         <div class="form-group form-row">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="emailOrTel" placeholder="Mobile number or email address" required>
-                                <input type="password" class="form-control" id="Password" placeholder="Password" required>
-                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                                <input type="text" class="form-control form-control-lg" id="emailOrTel" placeholder="Mobile number or email address" required>
+                                <input type="password" class="form-control form-control-lg" id="Password" placeholder="Password" required>
+                                <input type="password" class="form-control form-control-lg" id="confirmPassword" placeholder="Confirm Password" required>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <div class="form-group form-inline">
-                            <div class="col-sm-12">
-                                <select class="form-control col-sm-4" id="date" placeholder="Birth Date" required>
+                        <div class="form-group">
+                            <div>
+                                <select class="form-control form-control-lg" id="date" placeholder="Birth Date" required>
                                     <option class="pHText" value="00">Birth Date</option>
                                     <option value="01">01</option>
                                     <option value="02">02</option>
@@ -58,7 +58,7 @@
                                     <option value="04">04</option>
                                     <option value="05">05</option>
                                 </select>
-                                <select class="form-control col-sm-4" id="month" placeholder="Birth Month" required>
+                                <select class="form-control form-control-lg" id="month" placeholder="Birth Month" required>
                                     <option class="pHText" value="00">Birth Month</option>
                                     <option value="01">January</option>
                                     <option value="02">February</option>
@@ -66,7 +66,7 @@
                                     <option value="04">April</option>
                                     <option value="05">May</option>
                                 </select>
-                                <select class="form-control col-sm-4" id="year" placeholder="Birth Year" required>
+                                <select class="form-control form-control-lg" id="year" placeholder="Birth Year" required>
                                     <option class="pHText" value="00">Birth Year</option>
                                     <option value="01">1980</option>
                                     <option value="02">1981</option>
@@ -79,17 +79,17 @@
                     </div>
 
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary">
+                        <label class="btn btn-secondary mfbtn">
                             <input type="radio" name="options" id="option1" value="male"><i class="far fa-user"></i> Male
                         </label>
-                        <label class="btn btn-secondary">
+                        <label class="btn btn-secondary mfbtn">
                             <input type="radio" name="options" id="option2" value="female"><i class="far fa-user"></i> Female
                         </label>
                     </div>
 
-                    <div>
-                        <button type="button" class="btn btn-dark">Signup</button>
-                        <button type="button" class="btn btn-outline-dark"><i class="fab fa-facebook"></i> Signup with Facebook</button>
+                    <div class="signup">
+                        <button type="button" class="btn btn-dark btn-signup">Signup</button>
+                        <button type="button" class="btn btn-outline-dark btn-fb"><i class="fab fa-facebook"></i> Signup with Facebook</button>
                     </div>
 
                 </fieldset>
