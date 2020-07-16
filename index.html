@@ -17,14 +17,15 @@
                     <a href="#login">LOGIN</a>
                 </div>
             </nav>
-
             <form id="form1">
                 <fieldset class="border p-2">
                     <legend class="w-auto">Create An Account</legend>
                     <div class="names">
-                        <input type="text" class="name-field" placeholder="First name" required>
+                        <input type="text" class="name-field" id="fname" placeholder="First name" required>
                         <input type="text" class="name-field" placeholder="Last name" required>
-                        <input type="text" class="name-field" placeholder="Username" required>
+                    </div>
+                    <div class="names">    
+                        <input type="text" class="username" placeholder="Username" required>
                     </div>
 
                     <div class="details">
@@ -34,7 +35,7 @@
                     </div>
 
                     <div class="birth">
-                        <select class="birth-field" placeholder="Birth Date" required>
+                        <select class="birth-field" id="bdate" placeholder="Birth Date" required>
                             <option value="">Birth Date</option>
                             <option value="01">01</option>
                             <option value="02">02</option>
@@ -42,7 +43,7 @@
                             <option value="04">04</option>
                             <option value="05">05</option>
                         </select>
-                        <select class="birth-field" placeholder="Birth Month" required>
+                        <select class="birth-field" id="bmonth" placeholder="Birth Month" required>
                             <option value="">Birth Month</option>
                             <option value="01">January</option>
                             <option value="02">February</option>
@@ -80,7 +81,7 @@
                 <p>By clicking Signup, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a></p>
             </div>
 
-            <div>
+            <div class="img1">
                 <img src="img/toshi.jpg" alt="a pug dressed up hipster">
             </div>
         </section>

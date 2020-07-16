@@ -64,11 +64,14 @@ input, select {
 .names {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
 }
 
 .name-field {
     margin-bottom: 1rem;
+}
+
+.username {
+    margin-bottom: 2rem;
 }
 
 .details {
@@ -172,4 +175,44 @@ input, select {
 
 img {
     width: 100vw;
+}
+
+@media (min-width: 576px) {
+
+    .names {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .name-field {
+        flex-grow: 1;
+        width: 45%;
+        margin-top: 1rem;
+    }
+
+    #fname {
+        margin-right: 1rem;
+    }
+
+    .username {
+        flex-grow: 1;
+        margin-bottom: 3rem;
+    }
+
+    .birth {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .birth-field {
+        flex-grow: 1;
+    }
+
+    #bdate, #bmonth {
+        margin-right: 1rem;
+    }
+
+
 }
