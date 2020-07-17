@@ -34,8 +34,10 @@ h1 {
 }
 
 a {
+    border: .1rem solid #fff;
     color: #000000;
     font-weight: bold;
+    padding: 1rem;
     text-decoration: none;
 }
 
@@ -82,6 +84,54 @@ input, select {
 
 .details-field {
     margin-bottom: 1rem;
+}
+
+.tool {
+    align-items: center;
+    display: flex;
+}
+
+.password {
+    flex-grow: 4;
+}
+
+.tooltip {
+    background-color: #a5dc86;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.6);
+    height: 1rem;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    padding: .7rem 1rem;
+    position: relative;
+    text-align: center;
+    width: 1rem;
+}
+
+.tooltip-content {
+    display: none;
+}
+
+.tooltip:hover .tooltip-content {
+    background-color: #a5dc86;
+    border-radius: .5rem;
+    bottom: 130%;
+    display: block;
+    left: -1.9rem;
+    padding: 1rem .5rem;
+    position: absolute;
+    left: -640%;
+    text-align: left;
+    width: max-content;
+}
+
+.tooltip .tooltip-content::after {
+    border-color: #a5dc86 transparent transparent transparent; content: " ";
+    border-style: solid;
+    border-width: .7rem;
+    bottom: -1.4rem;
+    right: .8rem;
+    position: absolute;
 }
 
 .birth {
@@ -178,6 +228,11 @@ img {
 }
 
 @media (min-width: 576px) {
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
     .names {
         display: flex;
