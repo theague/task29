@@ -60,7 +60,7 @@ input, select {
     border: .1rem solid #e4e4e4;
     height: 3rem;
     padding-left: 1rem;
-    
+
 }
 
 .names {
@@ -201,7 +201,7 @@ input, select {
     height: 3rem;
     margin-right: 1rem;
     width: 100px;
-    
+
 }
 
 .btn-fb {
@@ -215,7 +215,7 @@ input, select {
 .footer {
     color: #cecccc;
     font-weight: normal;
-    margin:0 0 2rem 2rem;   
+    margin:0 0 2rem 2rem;
 }
 
 .footer a{
@@ -228,6 +228,13 @@ img {
 }
 
 @media (min-width: 576px) {
+    img {
+        min-height: 434px;
+        max-height: 99vh;
+        object-fit: cover;
+        object-position: 223px -350px;
+    }
+
 
     .container {
         display: flex;
@@ -260,7 +267,7 @@ img {
         flex-direction: row;
         justify-content: space-evenly;
     }
-    
+
     .birth-field {
         flex-grow: 1;
     }
