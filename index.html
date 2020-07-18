@@ -3,93 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/0b03fadbf6.js" crossorigin="anonymous"></script>
     <title>A. Signup Form</title>
 </head>
 <body>
     <div class="container">
-        <section>
+        <section class="main">
             <nav class="nav">
                 <h1>A.</h1>
-                <button type="button" class="btn ml-auto">SIGNUP</button>
-                <button type="button" class="btn ml-auto btnLogin">LOGIN</button>
-                
+                <div class="nav-right">
+                    <a class="navbtn" href="#signup">SIGNUP</a>
+                    <a class="navbtn" href="#login">LOGIN</a>
+                </div>
             </nav>
-
-            <form>
+            <form id="form1">
                 <fieldset class="border p-2">
                     <legend class="w-auto">Create An Account</legend>
-                    <div class="form-group names">
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-lg" placeholder="First name" required>
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-lg" placeholder="Last name" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control form-control-lg" placeholder="Username" required>
-                            </div>
-                        </div>
+                    <div class="names">
+                        <input type="text" class="name-field" id="fname" placeholder="First name" required>
+                        <input type="text" class="name-field" placeholder="Last name" required>
+                    </div>
+                    <div class="names">    
+                        <input type="text" class="username" placeholder="Username" required>
                     </div>
 
-                    <div>
-                        <div class="form-group form-row">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control form-control-lg" id="emailOrTel" placeholder="Mobile number or email address" required>
-                                <input type="password" class="form-control form-control-lg" id="Password" placeholder="Password" required>
-                                <input type="password" class="form-control form-control-lg" id="confirmPassword" placeholder="Confirm Password" required>
+                    <div class="details">
+                        <input type="text" class="details-field" placeholder="Mobile number or email address" required>
+                        <div class="tool">
+                            <input type="password" class="details-field password" placeholder="Password" minlength="12" required>
+                            <div class="tooltip">?
+                                <span class="tooltip-content">Password must be at least 12 characters long.<br> We encourage you to include numbers and symbols.</span>
                             </div>
                         </div>
+                        <input type="password" class="details-field" placeholder="Confirm Password" required>
                     </div>
 
-                    <div>
-                        <div class="form-group">
-                            <div>
-                                <select class="form-control form-control-lg" id="date" placeholder="Birth Date" required>
-                                    <option class="pHText" value="00">Birth Date</option>
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
-                                </select>
-                                <select class="form-control form-control-lg" id="month" placeholder="Birth Month" required>
-                                    <option class="pHText" value="00">Birth Month</option>
-                                    <option value="01">January</option>
-                                    <option value="02">February</option>
-                                    <option value="03">March</option>
-                                    <option value="04">April</option>
-                                    <option value="05">May</option>
-                                </select>
-                                <select class="form-control form-control-lg" id="year" placeholder="Birth Year" required>
-                                    <option class="pHText" value="00">Birth Year</option>
-                                    <option value="01">1980</option>
-                                    <option value="02">1981</option>
-                                    <option value="03">1982</option>
-                                    <option value="04">1983</option>
-                                    <option value="05">1984</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="birth">
+                        <select class="birth-field" id="bdate" placeholder="Birth Date" required>
+                            <option value="">Birth Date</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                        </select>
+                        <select class="birth-field" id="bmonth" placeholder="Birth Month" required>
+                            <option value="">Birth Month</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                        </select>
+                        <select class="birth-field" placeholder="Birth Year" required>
+                            <option value="">Birth Year</option>
+                            <option value="01">1980</option>
+                            <option value="02">1981</option>
+                            <option value="03">1982</option>
+                            <option value="04">1983</option>
+                            <option value="05">1984</option>
+                        </select>
                     </div>
 
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary mfbtn">
-                            <input type="radio" name="options" id="option1" value="male"><i class="far fa-user"></i> Male
-                        </label>
-                        <label class="btn btn-secondary mfbtn">
-                            <input type="radio" name="options" id="option2" value="female"><i class="far fa-user"></i> Female
-                        </label>
+                    <div class="toggle">
+                        <input type="radio" id="radio-one" name="switch-one" value="male" required>
+                        <label for="radio-one"><i class="far fa-user"></i> Male</label>
+
+                        <input type="radio" id="radio-two" name="switch-one" value="female" required>
+                        <label for="radio-two"><i class="far fa-user"></i> Female</label>
+                        
                     </div>
 
                     <div class="signup">
-                        <button type="button" class="btn btn-dark btn-signup">Signup</button>
-                        <button type="button" class="btn btn-outline-dark btn-fb"><i class="fab fa-facebook"></i> Signup with Facebook</button>
+                        <button type="button submit" class="btn-signup" value="submit">Signup</button>
+                        <button type="button" form="form1" class="btn-fb"><i class="fab fa-facebook"></i> Signup with Facebook</button>
                     </div>
 
                 </fieldset>
@@ -97,19 +85,14 @@
             <div class="footer">
                 <p>By clicking Signup, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a></p>
             </div>
+        </section class="main">
 
-            <div>
-                <img src="img/toshi.jpg" alt="a pug dressed up hipster">
-            </div>
-        </section>
-
-
-
+        <div class="img1">
+            <img src="img/toshi.jpg" alt="a pug dressed up hipster">
+        </div>
+        
     </div>
     <script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </script>
 </body>
 </html>
