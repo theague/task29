@@ -233,7 +233,7 @@ img {
         display: flex;
         flex-direction: row-reverse;
     }
-
+    
     .names {
         display: flex;
         flex-direction: row;
