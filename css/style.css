@@ -224,15 +224,15 @@ input, select {
 }
 
 img {
-    width: 100vw;
+    max-width: 100vw;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 750px) {
     img {
         min-height: 434px;
-        max-height: 99vh;
+        max-height: 559.75px;
         object-fit: cover;
-        object-position: 223px -350px;
+        object-position: 75% 50%;
     }
 
 
